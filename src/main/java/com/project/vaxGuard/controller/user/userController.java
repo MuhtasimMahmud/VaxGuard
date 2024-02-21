@@ -21,5 +21,10 @@ public class userController {
         return "user/profile";
     }
 
+    @GetMapping("login")
+    public String login(){
+        return "/login";
+    }
+
 
 }
