@@ -19,25 +19,25 @@ public class userController {
 
     @GetMapping("login")
     public String login(){
-        return "/login";
+        return "login";
     }
 
-    @GetMapping("userProfileOVerView")
+    @GetMapping("/userProfileOVerView")
     public String profileOverViewTab(){
         return "user/profileOverview";
     }
 
-    @GetMapping("userProfile")
+    @GetMapping("/userProfile")
     public String userProfileTab(){
         return "user/profile";
     }
 
-    @GetMapping("userEmail")
+    @GetMapping("/userEmail")
     public String emailTab(){
         return "user/email";
     }
 
-    @GetMapping("userPassword")
+    @GetMapping("/userPassword")
     public String passwordTab(){
         return "user/password";
     }
