@@ -42,6 +42,11 @@ public class userController {
         return "user/password";
     }
 
+    @GetMapping("/userVaccineList")
+    public String vaccineList(){
+        return "user/Vaccine List";
+    }
+
 
 
 }
