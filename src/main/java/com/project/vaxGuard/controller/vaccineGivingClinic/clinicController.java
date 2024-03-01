@@ -22,5 +22,9 @@ public class clinicController {
         return "vaccineGivingClinic/Push";
     }
 
+    @GetMapping("clinicRecords")
+    public String records(){
+        return "vaccineGivingClinic/records";
+    }
 
 }
