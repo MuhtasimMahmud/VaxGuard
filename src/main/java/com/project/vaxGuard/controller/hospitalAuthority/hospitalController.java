@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class hospitalController {
 
 
-    @GetMapping("DoctorSignUp")
+    @GetMapping("hospitalSignUp")
     public String docSignUp(){
-        return "hospitalAuthority/DoctorSignUp";
+        return "hospitalAuthority/hospitalSignUp";
     }
 
 
