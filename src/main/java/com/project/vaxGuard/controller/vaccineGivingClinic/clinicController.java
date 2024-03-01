@@ -8,7 +8,7 @@ public class clinicController {
 
 
     @GetMapping("clinicSignUp")
-    public String docSignUp(){
+    public String clinicSignUp(){
         return "vaccineGivingClinic/clinicSignUp";
     }
 
