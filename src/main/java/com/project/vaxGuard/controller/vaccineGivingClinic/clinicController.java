@@ -17,5 +17,10 @@ public class clinicController {
         return "vaccineGivingClinic/clinicBase";
     }
 
+    @GetMapping("pushVaccine")
+    public String pushVaccine(){
+        return "vaccineGivingClinic/Push";
+    }
+
 
 }
