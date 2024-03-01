@@ -47,6 +47,11 @@ public class userController {
         return "user/Vaccine List";
     }
 
+    @GetMapping("/userFAQ")
+    public String userFAQ(){
+        return "user/FAQ";
+    }
+
 
 
 }
