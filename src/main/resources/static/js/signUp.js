@@ -25,11 +25,10 @@ function handleChange() {
 // Function to update the toggle switch state based on the current page URL
 function updateToggleSwitch() {
     var currentPage = window.location.href;
-    var toggleSwitch = document.getElementById('toggleSwitch');
 
-    if (currentPage.includes('patientSignUp')) {
+    if (currentPage.includes('hospitalSignUp')) {
         toggleSwitch.checked = true; // If on patientSignUp page, toggle switch is checked
-    } else if (currentPage.includes('hospitalSignUp')) {
+    } else if (currentPage.includes('patientSignUp')) {
         toggleSwitch.checked = false; // If on DoctorSignUp page, toggle switch is unchecked
     }
 }
