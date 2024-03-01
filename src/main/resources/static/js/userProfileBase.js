@@ -28,29 +28,3 @@ navLinks.forEach(link => {
     }
 });
 
-
-
-// Toggle Switch
-// Get the toggle switch element
-const toggleSwitch = document.getElementById('toggleSwitch');
-
-// Function to handle toggle switch change
-function handleChange() {
-    if (toggleSwitch.checked) {
-        // If option 1 is selected, change the src of the iframe to page1.html
-        document.getElementById('iframe').src = 'signUp.html';
-
-        // Alternatively, if you want to redirect the user to another page, you can use:
-        // window.location.href = 'page1.html';
-    } else {
-        // If option 2 is selected, change the src of the iframe to page2.html
-        document.getElementById('iframe').src = 'DoctorSignUp.html';
-
-        // Alternatively, if you want to redirect the user to another page, you can use:
-        // window.location.href = 'page2.html';
-    }
-}
-
-// Add event listener to the toggle switch
-toggleSwitch.addEventListener('change', handleChange);
-
