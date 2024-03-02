@@ -8,12 +8,12 @@ function handleChange() {
 
     let currentPage = window.location.href;
 
-    if (currentPage.includes('patientSignUp')) {
-        window.open('http://localhost:8080/clinicSignUp', "_self");
+    if (currentPage.includes('userSignUp')) {
+        window.open('http://localhost:8080/clinicSignUp', "_self"); // if the current page url is "userSignUp" then the page will be changed to "clinicSignUp"
     } else if(currentPage.includes('clinicSignUp')){
-        window.open('http://localhost:8080/patientSignUp', "_self");
+        window.open('http://localhost:8080/userSignUp', "_self"); // if the current page url is "clinicSignUp" then the page will be changed to "userSignUp"
     } else{
-        window.open('http://localhost:8080/patientSignUp', "_self");
+        window.open('http://localhost:8080/userSignUp', "_self");
     }
 
     updateToggleSwitch();
@@ -28,7 +28,7 @@ function updateToggleSwitch() {
 
     if (currentPage.includes('clinicSignUp')) {
         toggleSwitch.checked = true; // If on patientSignUp page, toggle switch is checked
-    } else if (currentPage.includes('patientSignUp')) {
+    } else if (currentPage.includes('userSignUp')) {
         toggleSwitch.checked = false; // If on DoctorSignUp page, toggle switch is unchecked
     }
 }
