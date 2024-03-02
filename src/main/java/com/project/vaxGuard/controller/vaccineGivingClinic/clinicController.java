@@ -27,4 +27,19 @@ public class clinicController {
         return "vaccineGivingClinic/records";
     }
 
+    @GetMapping("vaccineQuantity")
+    public String vaccines(){
+        return "vaccineGivingClinic/vaccines";
+    }
+
+    @GetMapping("requests")
+    public String requests(){
+        return "vaccineGivingClinic/requests";
+    }
+
+    @GetMapping("clinicProfile")
+    public String profile(){
+        return "vaccineGivingClinic/profile";
+    }
+
 }
