@@ -12,32 +12,80 @@
 </head>
 <body>
 
-    <!-- Chart 2 - Bootstrap Brain Component -->
-    <section class="py-3 py-md-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-9 col-xl-8 col-xxl-7">
-                    <div class="card widget-card border-light shadow-sm">
-                        <div class="card-body p-4">
-                            <div class="d-block d-sm-flex align-items-center justify-content-between mb-3">
-                                <div class="mb-3 mb-sm-0">
-                                    <h5 class="card-title widget-card-title">Browser Usage</h5>
-                                </div>
-                                <div>
-                                    <select class="form-select text-secondary border-light-subtle">
-                                        <option value="1">March 2023</option>
-                                        <option value="2">April 2023</option>
-                                        <option value="3">May 2023</option>
-                                        <option value="4">June 2023</option>
-                                    </select>
+    <section>
+
+
+        <form class="row gy-3 gy-lg-0 gx-lg-2 justify-content-center mb-2" style="margin-left: 7%;">
+            <div class="col-12 col-lg-3">
+                <label for="vaccineName" class="visually-hidden">Vaccine Name</label>
+                <input type="vaccineName" class="form-control bsb-form-control-3xl" id="vaccineName" value="" placeholder="Vaccine Name" aria-label="email-newsletter-component" aria-describedby="Vaccine Name" required>
+            </div>
+
+            <div class="col-12 col-lg-3">
+                <label for="Quantity" class="visually-hidden">Quantity</label>
+                <input type="number" class="form-control bsb-form-control-3xl" id="Quantity" value="" placeholder="Quantity" aria-label="email-newsletter-component" aria-describedby="Quantity" required>
+            </div>
+
+            <div class="col-12 col-lg-3">
+                <label for="expiredDate" class="visually-hidden">Expired Date</label>
+                <input type="date" class="form-control bsb-form-control-3xl" id="expiredDate" value="" placeholder="Expired Date" aria-label="email-newsletter-component" aria-describedby="Expired Date" required>
+            </div>
+
+            <div class="col-12 col-lg-3 text-center text-lg-start">
+                <button type="submit" class="btn btn-primary bsb-btn-3xl">Add Vaccine</button>
+            </div>
+        </form>
+
+
+
+        <!-- Chart 2 - Bootstrap Brain Component -->
+        <div class="">
+            <div class="">
+                <div class="row justify-content-center">
+                    <div class="">
+                        <div class="card widget-card border-light shadow-sm">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-borderless bsb-table-xl text-nowrap align-middle m-0">
+                                        <thead>
+                                        <tr>
+                                            <th>Invoice</th>
+                                            <th>Customer</th>
+                                            <th>Product</th>
+                                            <th>Price</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <!--                                            <h6 class="mb-1">#DR8672</h6>-->
+                                                <span class="text-secondary fs-7">Web, UX Design</span>
+                                            </td>
+                                            <td>
+                                                <!--                                            <h6 class="mb-1">Emma</h6>-->
+                                                <span class="text-secondary fs-7">United Kingdom</span>
+                                            </td>
+                                            <td>
+                                                <!--                                            <h6 class="mb-1">WordPress</h6>-->
+                                                <span class="text-secondary fs-7">v6.3+</span>
+                                            </td>
+                                            <td>$950</td>
+                                            <td>
+                                                <button style="border-style: none" class="badge bg-success">View</button>
+                                            </td>
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
-                            <div id="bsb-chart-2"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </section>
 
 
