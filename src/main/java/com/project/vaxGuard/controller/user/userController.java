@@ -11,9 +11,9 @@ public class userController {
         return "user/userDashboard";
     }
 
-    @GetMapping("patientSignUp")
+    @GetMapping("userSignUp")
     public String signUp(){
-        return "user/patientSignUp";
+        return "user/userSignUp";
     }
 
 
