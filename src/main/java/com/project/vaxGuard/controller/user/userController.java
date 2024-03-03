@@ -2,25 +2,12 @@ package com.project.vaxGuard.controller.user;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
+@RequestMapping("/vaccineCandidate")
 public class userController {
 
-    @GetMapping("userHome")
-    public String userHome(){
-        return "user/userDashboard";
-    }
-
-    @GetMapping("userSignUp")
-    public String signUp(){
-        return "user/userSignUp";
-    }
-
-
-    @GetMapping("login")
-    public String login(){
-        return "login";
-    }
 
     @GetMapping("/userProfileOVerView")
     public String profileOverViewTab(){

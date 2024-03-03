@@ -7,10 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class clinicController {
 
 
-    @GetMapping("clinicSignUp")
-    public String clinicSignUp(){
-        return "vaccineGivingClinic/clinicSignUp";
-    }
+
 
     @GetMapping("clinicBase")
     public String clinicBase(){
