@@ -1,8 +1,8 @@
 package com.project.vaxGuard.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+import javax.persistence.*;
+
+import java.util.List;
 
 import java.sql.Time;
 import java.util.Date;

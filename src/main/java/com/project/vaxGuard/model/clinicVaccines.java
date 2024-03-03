@@ -1,7 +1,8 @@
 package com.project.vaxGuard.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import javax.persistence.*;
+
+import java.util.List;
 
 @Entity
 public class clinicVaccines {
