@@ -53,11 +53,11 @@ public class MyConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http)throws Exception{
 
-        http.authorizeHttpRequests().antMatchers("/registeredUser/**").hasRole("USER")
-                .antMatchers("/admin/**").hasRole("ADMIN")
-                .antMatchers("/allUsers/**").permitAll().and().formLogin()
-                .loginPage("/signin")
-                .loginProcessingUrl("/dologin")
+        http.authorizeHttpRequests().antMatchers("/vaccineCandidate/**").hasRole("USER")
+                .antMatchers("/clinicAuthority/**").hasRole("CLINIC")
+                .and().formLogin()
+                .loginPage("/userSignUp")
+                .loginProcessingUrl("/login")
                 .successHandler(successHandler)
                 .and().csrf().disable();
 
