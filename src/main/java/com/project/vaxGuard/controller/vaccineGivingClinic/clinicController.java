@@ -8,9 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/clinicAuthority")
 public class clinicController {
 
-
-
-
     @GetMapping("clinicBase")
     public String clinicBase(){
         return "vaccineGivingClinic/clinicBase";
