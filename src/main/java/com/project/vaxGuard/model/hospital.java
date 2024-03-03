@@ -14,7 +14,6 @@ public class hospital {
         this.passcode = passcode;
     }
 
-
     public String getHospitalName() {
         return hospitalName;
     }

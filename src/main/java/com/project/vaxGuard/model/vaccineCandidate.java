@@ -9,7 +9,7 @@ import java.util.Date;
 import java.util.List;
 
 @Entity
-public class user {
+public class vaccineCandidate extends User{
 
     private String BabyName;
     private Date birthDate;
@@ -18,25 +18,23 @@ public class user {
     private String birthID;
     private String birthHospitalName;
     private String email;
-    private String password;
     @OneToMany
     private List<userTakenVaccines> takenVaccinesList;
 
-    public user(){
+    public vaccineCandidate(){
         //Default Constructor
     }
 
-
-    public user(String babyName, Date birthDate, Time birthTime, String birthID, String birthHospitalName, String email, String password) {
+    public vaccineCandidate(String role, String id, String password, String babyName, Date birthDate, Time birthTime, String birthID, String birthHospitalName, String email, List<userTakenVaccines> takenVaccinesList) {
+        super.setRole(role);
         BabyName = babyName;
         this.birthDate = birthDate;
         this.birthTime = birthTime;
         this.birthID = birthID;
         this.birthHospitalName = birthHospitalName;
         this.email = email;
-        this.password = password;
+        this.takenVaccinesList = takenVaccinesList;
     }
-
 
     public String getBabyName() {
         return BabyName;
@@ -86,11 +84,11 @@ public class user {
         this.email = email;
     }
 
-    public String getPassword() {
-        return password;
+    public List<userTakenVaccines> getTakenVaccinesList() {
+        return takenVaccinesList;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setTakenVaccinesList(List<userTakenVaccines> takenVaccinesList) {
+        this.takenVaccinesList = takenVaccinesList;
     }
 }

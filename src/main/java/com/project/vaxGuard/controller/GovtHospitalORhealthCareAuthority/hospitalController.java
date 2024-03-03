@@ -17,4 +17,14 @@ public class hospitalController {
         return "GovtHospitalORhealthCareAuthority/childBirthRegistration";
     }
 
+
+    @GetMapping("submitForm")
+    public String submitForm(){
+        return "";
+    }
+
+
+
+
+
 }

@@ -7,7 +7,7 @@ import jakarta.persistence.OneToMany;
 import java.util.List;
 
 @Entity
-public class clinic {
+public class clinic extends User{
 
     private String name;
     @Id
@@ -15,15 +15,17 @@ public class clinic {
     @OneToMany
     private List<clinicVaccines> vaccinesList;
     @OneToMany
-    private List<user> records;
+    private List<vaccineCandidate> records;
     @OneToMany
-    private List<user> requests;
+    private List<vaccineCandidate> requests;
+
 
     public clinic(){
-
+        //Default Constructor
     }
 
-    public clinic(String name, String registrationNumber, List<clinicVaccines> vaccinesList, List<user> records, List<user> requests) {
+    public clinic(String role, String id, String password, String name, String registrationNumber, List<clinicVaccines> vaccinesList, List<vaccineCandidate> records, List<vaccineCandidate> requests) {
+        super.setRole(role);
         this.name = name;
         this.registrationNumber = registrationNumber;
         this.vaccinesList = vaccinesList;
@@ -40,11 +42,13 @@ public class clinic {
     }
 
     public String getRegistrationNumber() {
-        return registrationNumber;
+        return super.getId();
+//        return registrationNumber;
     }
 
     public void setRegistrationNumber(String registrationNumber) {
-        this.registrationNumber = registrationNumber;
+        super.setId(registrationNumber);
+//        this.registrationNumber = registrationNumber;
     }
 
     public List<clinicVaccines> getVaccinesList() {
@@ -55,19 +59,19 @@ public class clinic {
         this.vaccinesList = vaccinesList;
     }
 
-    public List<user> getRecords() {
+    public List<vaccineCandidate> getRecords() {
         return records;
     }
 
-    public void setRecords(List<user> records) {
+    public void setRecords(List<vaccineCandidate> records) {
         this.records = records;
     }
 
-    public List<user> getRequests() {
+    public List<vaccineCandidate> getRequests() {
         return requests;
     }
 
-    public void setRequests(List<user> requests) {
+    public void setRequests(List<vaccineCandidate> requests) {
         this.requests = requests;
     }
 }
