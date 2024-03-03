@@ -5,6 +5,10 @@ public class hospital {
     String hospitalName;
     String passcode;
 
+    public hospital(){
+        //Default Constructor
+    }
+
     public hospital(String hospitalName, String passcode) {
         this.hospitalName = hospitalName;
         this.passcode = passcode;

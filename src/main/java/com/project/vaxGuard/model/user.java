@@ -2,9 +2,11 @@ package com.project.vaxGuard.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 
 import java.sql.Time;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 public class user {
@@ -17,6 +19,8 @@ public class user {
     private String birthHospitalName;
     private String email;
     private String password;
+    @OneToMany
+    private List<userTakenVaccines> takenVaccinesList;
 
     public user(){
         //Default Constructor

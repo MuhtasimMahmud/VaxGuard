@@ -4,23 +4,32 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
 @Entity
-public class vaccine {
+public class clinicVaccines {
 
-    private String vaccineName;
     @Id
     private String vaccineId;
+    private String vaccineName;
     private String quantity;
     private String expiredDate;
 
-    public vaccine() {
+    public clinicVaccines(){
+        //Default Constructor
     }
 
-    public vaccine(String vaccineName, String quantity, String expiredDate) {
+    public clinicVaccines(String vaccineId, String vaccineName, String quantity, String expiredDate) {
+        this.vaccineId = vaccineId;
         this.vaccineName = vaccineName;
         this.quantity = quantity;
         this.expiredDate = expiredDate;
     }
 
+    public String getVaccineId() {
+        return vaccineId;
+    }
+
+    public void setVaccineId(String vaccineId) {
+        this.vaccineId = vaccineId;
+    }
 
     public String getVaccineName() {
         return vaccineName;
