@@ -20,12 +20,15 @@ public class vaccineCandidate extends User{
     private String birthID;
     @OneToMany
     private List<userTakenVaccines> takenVaccinesList;
+    @OneToMany
+    private List<userPendingVaccines> pendingVaccinesList;
+
 
     public vaccineCandidate(){
         //Default Constructor
     }
 
-    public vaccineCandidate(String role, String emailId, String password, String babyName, Date birthDate, Time birthTime, String birthHospitalName, String birthID, List<userTakenVaccines> takenVaccinesList) {
+    public vaccineCandidate(String role, String emailId, String password, String babyName, Date birthDate, Time birthTime, String birthHospitalName, String birthID, List<userTakenVaccines> takenVaccinesList, List<userPendingVaccines> pendingVaccinesList) {
         super.setRole(role);
         super.setEmailId(emailId);
         super.setPassword(password);
@@ -35,6 +38,7 @@ public class vaccineCandidate extends User{
         this.birthHospitalName = birthHospitalName;
         this.birthID = birthID;
         this.takenVaccinesList = takenVaccinesList;
+        this.pendingVaccinesList = pendingVaccinesList;
     }
 
     public String getBabyName() {
@@ -83,5 +87,13 @@ public class vaccineCandidate extends User{
 
     public void setTakenVaccinesList(List<userTakenVaccines> takenVaccinesList) {
         this.takenVaccinesList = takenVaccinesList;
+    }
+
+    public List<userPendingVaccines> getPendingVaccinesList() {
+        return pendingVaccinesList;
+    }
+
+    public void setPendingVaccinesList(List<userPendingVaccines> pendingVaccinesList) {
+        this.pendingVaccinesList = pendingVaccinesList;
     }
 }
