@@ -37,7 +37,51 @@ public class vaccineCandidate extends User{
         this.takenVaccinesList = takenVaccinesList;
     }
 
+    public String getBabyName() {
+        return BabyName;
+    }
 
+    public void setBabyName(String babyName) {
+        BabyName = babyName;
+    }
 
+    public Date getBirthDate() {
+        return birthDate;
+    }
 
+    public void setBirthDate(Date birthDate) {
+        this.birthDate = birthDate;
+    }
+
+    public Time getBirthTime() {
+        return birthTime;
+    }
+
+    public void setBirthTime(Time birthTime) {
+        this.birthTime = birthTime;
+    }
+
+    public String getBirthHospitalName() {
+        return birthHospitalName;
+    }
+
+    public void setBirthHospitalName(String birthHospitalName) {
+        this.birthHospitalName = birthHospitalName;
+    }
+
+    public String getBirthID() {
+        return birthID;
+    }
+
+    public void setBirthID(String birthID) {
+        this.birthID = birthID;
+    }
+
+    public List<userTakenVaccines> getTakenVaccinesList() {
+        return takenVaccinesList;
+    }
+
+    public void setTakenVaccinesList(List<userTakenVaccines> takenVaccinesList) {
+        this.takenVaccinesList = takenVaccinesList;
+    }
 }

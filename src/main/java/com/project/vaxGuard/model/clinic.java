@@ -34,4 +34,44 @@ public class clinic extends User{
         this.records = records;
         this.requests = requests;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getRegistrationNumber() {
+        return registrationNumber;
+    }
+
+    public void setRegistrationNumber(String registrationNumber) {
+        this.registrationNumber = registrationNumber;
+    }
+
+    public List<clinicVaccines> getVaccinesList() {
+        return vaccinesList;
+    }
+
+    public void setVaccinesList(List<clinicVaccines> vaccinesList) {
+        this.vaccinesList = vaccinesList;
+    }
+
+    public List<vaccineCandidate> getRecords() {
+        return records;
+    }
+
+    public void setRecords(List<vaccineCandidate> records) {
+        this.records = records;
+    }
+
+    public List<vaccineCandidate> getRequests() {
+        return requests;
+    }
+
+    public void setRequests(List<vaccineCandidate> requests) {
+        this.requests = requests;
+    }
 }
