@@ -1,7 +1,9 @@
 package com.project.vaxGuard.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class User {
@@ -10,7 +12,6 @@ public class User {
     @Id
     private String emailId;
     private String password;
-
 
     public User(){
         //Default Constructor
